@@ -1,0 +1,238 @@
+{
+  "title": "Registro delle pratiche edilizie",
+  "description": "Prototipo navigabile per consultare, filtrare e protocollare pratiche edilizie, con cruscotto delle scadenze imminenti.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "cruscotto",
+      "title": "Cruscotto",
+      "description": "Panoramica delle pratiche edilizie e dei termini in scadenza nei prossimi 15 giorni.",
+      "metrics": [
+        {
+          "label": "Pratiche aperte",
+          "value": "24"
+        },
+        {
+          "label": "In scadenza entro 15 giorni",
+          "value": "5"
+        },
+        {
+          "label": "In attesa di integrazioni",
+          "value": "4"
+        },
+        {
+          "label": "Protocollate questo mese",
+          "value": "8"
+        }
+      ],
+      "columns": [
+        "Numero pratica",
+        "Tipo",
+        "Indirizzo",
+        "Tecnico istruttore",
+        "Scadenza",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "PE-2025-041",
+          "CILA",
+          "Via delle Lanterne 12, Valleverde",
+          "Nubi Riva",
+          "18/06/2025",
+          "In istruttoria"
+        ],
+        [
+          "PE-2025-038",
+          "SCIA",
+          "Piazza dei Gelsi 4, Roccalume",
+          "Lumo Serra",
+          "20/06/2025",
+          "Integrazione richiesta"
+        ],
+        [
+          "PE-2025-035",
+          "Permesso di costruire",
+          "Vicolo delle Vele 7, Fonteluce",
+          "Vela Bruni",
+          "23/06/2025",
+          "In istruttoria"
+        ],
+        [
+          "PE-2025-032",
+          "CILA",
+          "Via dei Salici 19, Valleverde",
+          "Nubi Riva",
+          "27/06/2025",
+          "In attesa di verifica"
+        ],
+        [
+          "PE-2025-029",
+          "SCIA",
+          "Largo delle Nuvole 3, Roccalume",
+          "Lumo Serra",
+          "30/06/2025",
+          "In istruttoria"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "elenco-pratiche",
+      "title": "Elenco pratiche",
+      "description": "Ricerca e consultazione delle pratiche, con filtri per tipologia e stato.",
+      "metrics": [],
+      "columns": [
+        "Numero pratica",
+        "Tipo",
+        "Indirizzo",
+        "Tecnico istruttore",
+        "Data protocollo",
+        "Scadenza",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "PE-2025-041",
+          "CILA",
+          "Via delle Lanterne 12, Valleverde",
+          "Nubi Riva",
+          "04/06/2025",
+          "18/06/2025",
+          "In istruttoria"
+        ],
+        [
+          "PE-2025-038",
+          "SCIA",
+          "Piazza dei Gelsi 4, Roccalume",
+          "Lumo Serra",
+          "02/06/2025",
+          "20/06/2025",
+          "Integrazione richiesta"
+        ],
+        [
+          "PE-2025-035",
+          "Permesso di costruire",
+          "Vicolo delle Vele 7, Fonteluce",
+          "Vela Bruni",
+          "29/05/2025",
+          "23/06/2025",
+          "In istruttoria"
+        ],
+        [
+          "PE-2025-032",
+          "CILA",
+          "Via dei Salici 19, Valleverde",
+          "Nubi Riva",
+          "26/05/2025",
+          "27/06/2025",
+          "In attesa di verifica"
+        ],
+        [
+          "PE-2025-029",
+          "SCIA",
+          "Largo delle Nuvole 3, Roccalume",
+          "Lumo Serra",
+          "21/05/2025",
+          "30/06/2025",
+          "In istruttoria"
+        ],
+        [
+          "PE-2025-026",
+          "Permesso di costruire",
+          "Via delle Felci 8, Fonteluce",
+          "Vela Bruni",
+          "15/05/2025",
+          "04/07/2025",
+          "Integrazione richiesta"
+        ],
+        [
+          "PE-2025-023",
+          "CILA",
+          "Cortile dei Pioppi 5, Valleverde",
+          "Nubi Riva",
+          "12/05/2025",
+          "08/07/2025",
+          "Conclusa"
+        ],
+        [
+          "PE-2025-020",
+          "SCIA",
+          "Via del Mirto 16, Roccalume",
+          "Lumo Serra",
+          "08/05/2025",
+          "10/07/2025",
+          "In istruttoria"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "scheda-pratica",
+      "title": "Scheda pratica",
+      "description": "Dettaglio della pratica selezionata e cronologia delle attività di istruttoria.",
+      "metrics": [
+        {
+          "label": "Giorni alla scadenza",
+          "value": "14"
+        },
+        {
+          "label": "Aggiornamenti registrati",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Data",
+        "Attività",
+        "Esito",
+        "Operatore"
+      ],
+      "rows": [
+        [
+          "04/06/2025",
+          "Protocollazione della domanda",
+          "Registrata",
+          "Nubi Riva"
+        ],
+        [
+          "06/06/2025",
+          "Assegnazione dell'istruttoria",
+          "Assegnata",
+          "Nubi Riva"
+        ],
+        [
+          "10/06/2025",
+          "Verifica documentale",
+          "In corso",
+          "Nubi Riva"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "protocollazione",
+      "title": "Protocollazione",
+      "description": "Inserimento di una nuova pratica edilizia nel registro e assegnazione all'istruttoria.",
+      "metrics": [],
+      "columns": [
+        "Numero pratica",
+        "Tipo",
+        "Indirizzo",
+        "Tecnico istruttore",
+        "Data protocollo",
+        "Scadenza",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Numero pratica",
+        "Tipo",
+        "Indirizzo",
+        "Tecnico istruttore",
+        "Data protocollo",
+        "Scadenza",
+        "Stato"
+      ]
+    }
+  ]
+}
